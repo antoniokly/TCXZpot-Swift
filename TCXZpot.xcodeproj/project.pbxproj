@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		113683E31ECEEBFC008E7D93 /* TCXZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113683D91ECEEBFC008E7D93 /* TCXZpot.framework */; };
-		113683EA1ECEEBFC008E7D93 /* TCXZpot-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 113683DC1ECEEBFC008E7D93 /* TCXZpot-Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		113683F41ECEEC61008E7D93 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113683F31ECEEC61008E7D93 /* Serializer.swift */; };
 		113683F61ECEF320008E7D93 /* TCXSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113683F51ECEF320008E7D93 /* TCXSerializable.swift */; };
 		113683F81ECEF383008E7D93 /* AbstractSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113683F71ECEF383008E7D93 /* AbstractSource.swift */; };
@@ -244,7 +243,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113683EA1ECEEBFC008E7D93 /* TCXZpot-Swift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,12 +298,13 @@
 					113683D81ECEEBFC008E7D93 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = L7RXC8SZH2;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 					113683E11ECEEBFC008E7D93 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = L7RXC8SZH2;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -315,6 +314,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 113683CF1ECEEBFC008E7D93;
@@ -535,7 +535,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -555,7 +556,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sweetzpot.TCXZpot-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -568,7 +570,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sweetzpot.TCXZpot-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -581,7 +584,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sweetzpot.TCXZpot-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
