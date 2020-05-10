@@ -143,7 +143,7 @@
 		11E6352A1ED332000031AFA5 /* ApplicationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationTest.swift; sourceTree = "<group>"; };
 		11E6352C1ED333280031AFA5 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		11E6352E1ED334F50031AFA5 /* DeviceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTest.swift; sourceTree = "<group>"; };
-		A4C2A26E24680C670015663B /* TCXZpot_Swift_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCXZpot_Swift_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C2A26E24680C670015663B /* TCXZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCXZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C2A27024680C670015663B /* TCXZpot_Swift_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCXZpot_Swift_watchOS.h; sourceTree = "<group>"; };
 		A4C2A27124680C670015663B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,7 +189,7 @@
 			children = (
 				113683D91ECEEBFC008E7D93 /* TCXZpot.framework */,
 				113683E21ECEEBFC008E7D93 /* TCXZpotTests.xctest */,
-				A4C2A26E24680C670015663B /* TCXZpot_Swift_watchOS.framework */,
+				A4C2A26E24680C670015663B /* TCXZpot.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -340,9 +340,9 @@
 			productReference = 113683E21ECEEBFC008E7D93 /* TCXZpotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A4C2A26D24680C670015663B /* TCXZpot-Swift-watchOS */ = {
+		A4C2A26D24680C670015663B /* TCXZpot-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4C2A27324680C670015663B /* Build configuration list for PBXNativeTarget "TCXZpot-Swift-watchOS" */;
+			buildConfigurationList = A4C2A27324680C670015663B /* Build configuration list for PBXNativeTarget "TCXZpot-watchOS" */;
 			buildPhases = (
 				A4C2A26924680C670015663B /* Headers */,
 				A4C2A26A24680C670015663B /* Sources */,
@@ -353,9 +353,9 @@
 			);
 			dependencies = (
 			);
-			name = "TCXZpot-Swift-watchOS";
+			name = "TCXZpot-watchOS";
 			productName = "TCXZpot-Swift-watchOS";
-			productReference = A4C2A26E24680C670015663B /* TCXZpot_Swift_watchOS.framework */;
+			productReference = A4C2A26E24680C670015663B /* TCXZpot.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -402,7 +402,7 @@
 			targets = (
 				113683D81ECEEBFC008E7D93 /* TCXZpot */,
 				113683E11ECEEBFC008E7D93 /* TCXZpotTests */,
-				A4C2A26D24680C670015663B /* TCXZpot-Swift-watchOS */,
+				A4C2A26D24680C670015663B /* TCXZpot-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -733,13 +733,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sweetzpot.TCXZpot-Swift-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweetzpot.TCXZpot-Swift.watchOS";
+				PRODUCT_NAME = TCXZpot;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
 			name = Debug;
 		};
@@ -770,13 +770,13 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sweetzpot.TCXZpot-Swift-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweetzpot.TCXZpot-Swift.watchOS";
+				PRODUCT_NAME = TCXZpot;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
 			name = Release;
 		};
@@ -810,7 +810,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4C2A27324680C670015663B /* Build configuration list for PBXNativeTarget "TCXZpot-Swift-watchOS" */ = {
+		A4C2A27324680C670015663B /* Build configuration list for PBXNativeTarget "TCXZpot-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4C2A27424680C670015663B /* Debug */,
